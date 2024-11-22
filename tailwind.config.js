@@ -15,6 +15,8 @@ export default {
         'green-1': '#00B69B',
         'reviewbar-bg': '#F7EAE2',
         'secondary-1': '#2A3F58',
+        color1: '#6C8194',
+        color2: '#F5F5F5',
       },
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],

@@ -3,12 +3,11 @@ import React from 'react'
 const StockUpdate = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
-    // Handle form submission
   }
 
   return (
-    <div className='w-full max-w-[600px] mx-auto bg-gray-200 rounded-lg shadow font-inter'>
-      <div className='flex justify-between items-center p-4 border-b'>
+    <div className='w-full m-4 lg:py-4 lg:px-4 py-2 px-2 max-w-[992px] mx-auto bg-color2 border border-opacity-50 border-color1 rounded-lg shadow font-inter'>
+      <div className='flex justify-between items-center pb-4 px-4 border-b'>
         <h2 className='text-lg font-semibold text-gray-900'>
           Update Stock Count
         </h2>
@@ -31,11 +30,11 @@ const StockUpdate = () => {
 
       <form onSubmit={handleSubmit} className='p-4 space-y-4'>
         <div className='space-y-2'>
-          <label className='block text-sm font-medium text-gray-900'>
+          <label className='block text-md font-semibold text-gray-900'>
             Select Item
           </label>
           <div className='relative'>
-            <select className='block w-full rounded-md border border-gray-300 py-2 px-3 appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500'>
+            <select className='block w-full rounded-md border bg-color2 border-gray-300 py-2 px-3 appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500'>
               <option>-High-</option>
               <option>-Medium-</option>
               <option>-Low-</option>
@@ -66,7 +65,7 @@ const StockUpdate = () => {
             <input
               type='text'
               placeholder='Item 1'
-              className='block w-full rounded-md border border-gray-300 py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500'
+              className='block w-full rounded-md border text-gray-900 bg-color2 border-gray-300 py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500'
             />
           </div>
           <div className='space-y-2'>
@@ -76,7 +75,7 @@ const StockUpdate = () => {
             <input
               type='text'
               placeholder='K-50'
-              className='block w-full rounded-md border border-gray-300 py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500'
+              className='block w-full rounded-md border bg-color2 border-gray-300 py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500'
             />
           </div>
         </div>
@@ -90,7 +89,7 @@ const StockUpdate = () => {
               type='text'
               placeholder='Item 1'
               disabled
-              className='block w-full rounded-md border border-gray-300 bg-gray-50 py-2 px-3 cursor-not-allowed'
+              className='block w-full rounded-md border bg-color2 border-gray-300  py-2 px-3 '
             />
           </div>
           <div className='space-y-2'>
@@ -100,16 +99,16 @@ const StockUpdate = () => {
             <input
               type='text'
               placeholder='K-50'
-              className='block w-full rounded-md border border-gray-300 py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500'
+              className='block w-full rounded-md border bg-color2 border-gray-300 py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500'
             />
           </div>
         </div>
 
-        <div className='space-y-2'>
+        <div className='space-y-2 bg-white p-4 rounded-lg'>
           <label className='block text-sm font-medium text-gray-900'>
             Note
           </label>
-          <textarea className='block w-full rounded-md border border-gray-300 py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 min-h-[100px] resize-none' />
+          <textarea className='block w-full bg-color2 rounded-md border border-gray-300 py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 min-h-[100px] resize-none' />
         </div>
 
         <div className='flex justify-end space-x-2 pt-4 border-t'>
